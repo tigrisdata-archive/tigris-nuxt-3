@@ -1,5 +1,7 @@
 # Nuxt 3 with Tigris Minimal Starter
 
+![Tigris + Nuxt 3 app screenshot](docs/tigris-nuxt-3-screengrab.png)
+
 To learn more check out:
 
 - [Tigris documentation](https://www.tigrisdata.com/docs/)

@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "tigris:init": "TIGRIS_PROJECT=\"${npm_config_project:=tigris-nuxt-3}\" && tigris create project $TIGRIS_PROJECT -o . --create-env-file",
-    "tigris:seed": "TIGRIS_PROJECT=\"${npm_config_project:=tigris-nuxt-3}\" && npx ts-node ./scripts/seed.ts --create-dirs && cat seed/prizes.json | tigris import prizes -p $TIGRIS_PROJECT",
     "tigris:setup": "npx ts-node ./scripts/setup.ts",
+    "pretigris:seed": "npm run tigris:setup",
+    "tigris:seed": "TIGRIS_PROJECT=\"${npm_config_project:=tigris-nuxt-3}\" && npx ts-node ./scripts/seed.ts --create-dirs && tigris login && cat seed/prizes.json | tigris import prizes -p $TIGRIS_PROJECT --append",
     "prebuild": "npm run tigris:setup",
     "build": "nuxt build",
     "predev": "npm run tigris:setup",
@@ -14,6 +15,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.7.0",
     "@rollup/plugin-typescript": "^11.1.1",
     "@tigrisdata/tigris-cli": "^1.0.0-beta.32",
     "@types/node": "^18",

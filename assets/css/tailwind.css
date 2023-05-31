@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply antialiased font-sans text-gray-700 dark:text-gray-200 bg-white dark:bg-black [--scroll-mt:10rem] lg:[--scroll-mt:7rem];
+  }
+
+  h1 {
+    @apply text-2xl lg:text-3xl mb-5 font-extrabold;
+  }
+  h2 {
+    @apply text-xl mb-5 font-extrabold;
+  }
+  h3 {
+    @apply text-lg mb-5 uppercase font-bold;
+  }
+  h4 {
+    @apply font-bold mb-2;
+  }
+
+  nav > a {
+    @apply mr-2 uppercase;
+  }
+  a {
+    @apply underline text-green-950 dark:text-green-100 hover:decoration-dashed;
+  }
+  p {
+    @apply mb-10;
+  }
+}

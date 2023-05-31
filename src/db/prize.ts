@@ -30,12 +30,12 @@ export class Prize {
   @Field(TigrisDataTypes.STRING)
   category!: string;
 
-  @Field({ elements: Laureate })
+  @Field(TigrisDataTypes.ARRAY, { elements: Laureate })
   laureates!: Array<Laureate>;
 
   @Field(TigrisDataTypes.STRING)
   overallMotivation!: string;
 
-  @Field(TigrisDataTypes.STRING)
-  year!: string;
+  @Field(TigrisDataTypes.NUMBER, { index: true })
+  year!: number;
 }
