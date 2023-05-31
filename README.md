@@ -26,11 +26,17 @@ Run the following command. You will need to create a Tigris Cloud account or
 login to an existing account to authenticate the Tigris CLI:
 
 ```sh
-npm run tigris:seed
+npm run tigris:init
 ```
 
 This will create a project in Tigris Cloud and store your Tigris project
 configuration in a `.env` file.
+
+With the project config in place, seed the Tigris Database with data:
+
+```sh
+npm run tigris:seed
+```
 
 ## Development Server
 
