@@ -2,9 +2,9 @@
 
 ![Tigris + Nuxt 3 app screenshot](docs/tigris-nuxt-3-screengrab.png)
 
-To learn more check out:
+To learn more, check out:
 
-- [Tigris documentation](https://www.tigrisdata.com/docs/)
+- [Tigris documentation](https://www.tigrisdata.com/docs/?utm_source=nuxt-3-template&utm_medium=code&utm_campaign=nuxt-3-template)
 - [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
 
 ## Setup
